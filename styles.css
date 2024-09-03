@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Overpass", sans-serif;*/
+
+
+/*css reset*/
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/*Toggling on and off seeing the thankYou state*/
+
+.invisible{
+  position: absolute;
+visibility:hidden;
+display:none;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light_grey: hsl(217, 12%, 63%);
+    --blue: hsl(215, 12%, 20%);
+    --dark_blue: hsl(213, 19%, 18%);
+    --very_dark_blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+/*Ratings Page*/
+
+body{
+    font-family: "Overpass", sans-serif;
+}
+
+.main {
+    background-color: var(--very_dark_blue);
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding: 1.5rem;
+}
+
+.card{
+    background-color: var(--dark_blue);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    color: white;
+}
+
+.star {
+  padding: 1rem;
+  border-radius: 100%;
+  background-color: var(--blue);
+}
+
+.star-image-container {
+  margin-bottom: 1rem;
+}
+
+.title{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.number-container {
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 1rem;
+}
+
+.number-rating-button{
+  /*I couldnt figure out a way besides fixed heights here, I tried doing the same thing as the star, but got an oval lol*/
+  min-height: 2.7rem;
+  min-width: 2.7rem;
+  border-radius: 50%;
+  background-color: var(--blue);
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  font-size: 0.85;
+}
+
+.number-rating-button:hover{
+  background-color: var(--white);
+  color: var(--very_dark_blue);
+  cursor: pointer;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: var(--orange);
+  border-radius: 1.5rem;
+  text-align: center;
+  border: none;
+  flex-grow: 1;
+  padding: 0.5rem 0;
+  color: var(--very_dark_blue);
+  font-weight: 700;
+}
+
+.button:hover{
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.thank-you{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.thanks-description{
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.picture-container{
+  margin-bottom: 1rem;
+}
+
+.selection-button{
+  padding: 0.3rem 0.5rem;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--orange);
+  margin-bottom: 1.5rem;
+}
+
+.thanks{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+
+@media (max-width: 600px) {
+  /* … */
+}
+
