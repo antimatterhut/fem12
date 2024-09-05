@@ -54,11 +54,7 @@
 
 /*Toggling on and off seeing the thankYou state*/
 
-.invisible{
-  position: absolute;
-visibility:hidden;
-display:none;
-}
+
 
 :root {
     --white: hsl(0, 0%, 100%);
@@ -132,7 +128,7 @@ body{
 }
 
 .number-rating-button:hover{
-  background-color: var(--white);
+  background-color: var(--orange);
   color: var(--very_dark_blue);
   cursor: pointer;
 }
@@ -194,7 +190,27 @@ body{
 }
 
 
-@media (max-width: 600px) {
+@media (min-width: 20rem) {
   /* … */
+  .description, .thanks-description{
+    max-width: 18rem;
+  }
+}
+
+/*JS CS TOGGLE*/
+
+.invisible{
+  position: absolute;
+visibility:hidden;
+display:none;
+}
+
+.white-button {
+  background-color: var(--white);
+  color: var(--very_dark_blue);
+}
+
+.white-button:hover {
+  background-color: white;
 }
 
