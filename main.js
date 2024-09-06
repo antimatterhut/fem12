@@ -6,7 +6,7 @@ const submitButton = document.querySelector(".button"); //SUBMIT BUTTON
 const ratingPage = document.querySelector(".rating-page"); //ratings page
 const thankYouPage = document.querySelector(".thank-you"); //thank-you page
 const rating = document.querySelector(".rating");
-var selection = 0; //Number that I chose
+let selection = 0; //Number that I chose
 
 const handleNumberButtons= (e) => {
     numberButtons.forEach((element) => { //changes the color while keeping the rest of the buttons the same
@@ -29,7 +29,6 @@ numberButtons.forEach((element) => {
 //We need to now add the submit functionality
 
 const handleSubmit = (e) => { //go to end screen
-    console.log(selection)
     if(selection != 0){
         rating.innerHTML = selection;
         ratingPage.classList.toggle("invisible");

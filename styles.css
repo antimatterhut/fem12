@@ -80,6 +80,12 @@ body{
     padding: 1.5rem;
 }
 
+.rating-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .card{
     background-color: var(--dark_blue);
     border-radius: 1rem;
@@ -93,26 +99,22 @@ body{
   background-color: var(--blue);
 }
 
-.star-image-container {
-  margin-bottom: 1rem;
-}
+
 
 .title{
   font-size: 1.5rem;
-  margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .description {
   font-size: 0.85rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+  
 }
 
 .number-container {
   display: flex;
   justify-content:space-between;
-  margin-bottom: 1rem;
 }
 
 .number-rating-button{
@@ -159,18 +161,14 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  gap: 1rem;
 }
 
 .thanks-description{
   text-align: center;
   font-size: 0.85rem;
   font-weight: 400;
-  margin-bottom: 1rem;
-}
 
-.picture-container{
-  margin-bottom: 1rem;
 }
 
 .selection-button{
@@ -181,11 +179,10 @@ body{
   font-weight: 400;
   text-align: center;
   color: var(--orange);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .thanks{
-  margin-bottom: 1rem;
   font-size: 1.5rem;
 }
 
