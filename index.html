@@ -11,6 +11,13 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
+  <!-- 
+  Accessibility goals:
+  1. Images and photos must have a filled out text attribute that describes it
+  2. Using well structured semantic HTML
+  3. Using ARIA for buttons with popups
+  4. Using ARIA-LABEL for links
+  -->
   
 
 </head>
@@ -21,7 +28,7 @@
 <div class = "card">
   <div class = "rating-page">
 
-    <div class = "star-image-container"><img class = "star" src="images/icon-star.svg" alt=""></div>
+    <div class = "star-image-container"><img class = "star" src="images/icon-star.svg" alt="star icon"></div>
 
     <h1 class = "title">How did we do?</h1>
     
@@ -30,14 +37,14 @@
       to help us improve our offering!</h3>
       
     <div class = "number-container">
-      <div class="number-rating-button">1</div>
-      <div class="number-rating-button">2</div>
-      <div class="number-rating-button">3</div>
-      <div class="number-rating-button">4</div>
-      <div class="number-rating-button">5</div>
+      <button class="number-rating-button" aria-label="number-button">1</button>
+      <button class="number-rating-button" aria-label="number-button">2</button>
+      <button class="number-rating-button" aria-label="number-button">3</button>
+      <button class="number-rating-button" aria-label="number-button">4</button>
+      <button class="number-rating-button" aria-label="number-button">5</button>
     </div>
     
-    <div class = "button-container">  <button class = "button"> SUBMIT</button></div>
+    <div class = "button-container">  <button class = "button" aria-label="submit-button" aria-expanded="false"> SUBMIT</button></div>
  
   </div>
 
@@ -46,7 +53,7 @@
   <!-- Thank you state start -->
 
   <div class = "thank-you invisible">
-  <div class = "picture-container"><img src="images/illustration-thank-you.svg" alt=""></div>
+  <div class = "picture-container"><img src="images/illustration-thank-you.svg" alt="receipt-picture"></div>
     <div class = "selection-button">  You selected <span class = "rating"></span> out of 5</div>
   
     <h1 class = "thanks">Thank you!</h1>
